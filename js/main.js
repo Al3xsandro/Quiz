@@ -39,8 +39,8 @@ function correct() {
     if (hits <= 8){
         return (
             /* Show messege on click in correct option */
-            document.getElementById('container').innerHTML = `<p style="padding: 8px; text-align: center;">Congrulations, resolve this next question.</p>`;
-            document.getElementById('quiz').innerHTML = `<button onclick='request()'>Next</button>`;
+            document.getElementById('container').innerHTML = `<p style="padding: 8px; text-align: center;">Congrulations, resolve this next question.</p>`
+            document.getElementById('quiz').innerHTML = `<button onclick='request()'>Next</button>`
         );
     } else {
         return (

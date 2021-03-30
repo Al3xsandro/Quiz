@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body {
+    background: #1d1c1c;
+}
+
 /* Style the navigation menu */
 #quiz {
     text-align: center;

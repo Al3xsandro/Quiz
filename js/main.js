@@ -32,7 +32,7 @@ function request() {
     }   
 /* Switch click in correct answer */
 function correct() {
-    const storage = localStorage;
+    localStorage;
     const hits = localStorage.getItem('hits') || '0';
     localStorage.setItem('hits', Number(hits)+1);
 
@@ -41,10 +41,8 @@ function correct() {
         document.getElementById('container').innerHTML = `<p style="padding: 8px; text-align: center;">Congrulations, resolve this next question.</p>`
         document.getElementById('quiz').innerHTML = `<button onclick='request()'>Next</button>`
     } else {
-        return (
-            document.getElementById('quiz').innerHTML = `<p style="text-align: center;">Congrulations, you're right all questions!`;
-            localStorage.setItem('hits', '0');
-        )
+        document.getElementById('quiz').innerHTML = `<p style="text-align: center;">Congrulations, you're right all questions!`;
+        localStorage.setItem('hits', '0');
     }
     
 }
@@ -55,6 +53,6 @@ function incorrect() {
 
 /*User menu*/
 function menu() {
-    const CourrentPage = $(".container").html();
-    const result = CurrentPage = $(".container").html(`<p class="p-3">Site developer for github ideas</p>`);
+    $(".container").html();
+    $(".container").html(`<p class="p-3">Site developer for github ideas</p>`);
 }

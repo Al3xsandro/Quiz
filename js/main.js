@@ -2,7 +2,7 @@
 function login() {
     /* Courrent Page */
     const name = document.getElementById("name").value;
-    const result = document.getElementById("container").innerHTML=`<h3 class="p-3">Hi ${name}, resolve this question..</h3>`;
+    document.getElementById("container").innerHTML=`<h3 class="p-3">Hi ${name}, resolve this question..</h3>`;
     request()
 }
 
@@ -37,18 +37,22 @@ function correct() {
     localStorage.setItem('hits', Number(hits)+1);
 
     if (hits <= 8){
-        /* Show messege on click in correct option */
-        document.getElementById('container').innerHTML = `<p style="padding: 8px; text-align: center;">Congrulations, resolve this next question.</p>`;
-        const next = document.getElementById('quiz').innerHTML = `<button onclick='request()'>Next</button>`;
-    }else{
-        document.getElementById('quiz').innerHTML = `<p style="text-align: center;">Congrulations, you're right all questions!`;
-        localStorage.setItem('hits', '0');
+        return (
+            /* Show messege on click in correct option */
+            document.getElementById('container').innerHTML = `<p style="padding: 8px; text-align: center;">Congrulations, resolve this next question.</p>`;
+            document.getElementById('quiz').innerHTML = `<button onclick='request()'>Next</button>`;
+        );
+    } else {
+        return (
+            document.getElementById('quiz').innerHTML = `<p style="text-align: center;">Congrulations, you're right all questions!`;
+            localStorage.setItem('hits', '0');
+        )
     }
     
 }
 /* Switch click in incorrect answer */
 function incorrect() {
-    document.getElementById('quiz').innerHTML = `<a href="index.html" class="description">Ops, try again.</a>`;
+    return document.getElementById('quiz').innerHTML = `<a href="index.html" class="description">Ops, try again.</a>`;
 }
 
 /*User menu*/

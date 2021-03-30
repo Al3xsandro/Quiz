@@ -53,7 +53,7 @@ function correct() {
 /* Switch click in incorrect answer */
 function incorrect() {
     return document.getElementById('quiz').innerHTML = `<a href="index.html" class="description">Ops, try again.</a>`;
-}
+} 
 
 /*User menu*/
 function menu() {

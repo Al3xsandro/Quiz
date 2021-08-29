@@ -1,10 +1,9 @@
-# Quiz App 🌏
+<h1 align="center">Quiz App 🌏</1>
 
-Hello, this Quiz App was developed to challenge "https://github.com/florinpop17/app-ideas/blob/master/Projects/1-Beginner/Quiz-App.md"
+## Tecnologias
+   - html
+   - css
+   - javascript
 
-<p>Demo: https://al3xsandro.github.io/quiz-app/</p>
-
--- 🚧  API 🚧 --
-----
-
-<p> ✪ https://opentdb.com/api_config.php ✪ </p>
+## Demonstração
+ - Demo: <a href="https://al3xsandro.github.io/quiz-app">`URL`</a>
